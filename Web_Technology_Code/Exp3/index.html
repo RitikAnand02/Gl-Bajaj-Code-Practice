@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Styles Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+        }
+
+        /* 1. Default Unordered List */
+        .unordered {
+            list-style-type: disc;
+        }
+
+        /* 2. Ordered List */
+        .ordered {
+            list-style-type: decimal;
+        }
+
+        /* 3. Custom Icon List */
+        .custom {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .custom li::before {
+            content: "✔ ";
+            color: green;
+            font-weight: bold;
+        }
+
+        /* 4. Horizontal List */
+        .horizontal {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .horizontal li {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        /* 5. Card Style List */
+        .card-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card-list li {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #2ecc71;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Display List of Items in Different Styles</h1>
+
+    <h2>1. Unordered List</h2>
+    <ul class="unordered">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Mango</li>
+    </ul>
+
+    <h2>2. Ordered List</h2>
+    <ol class="ordered">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ol>
+
+    <h2>3. Custom Icon List</h2>
+    <ul class="custom">
+        <li>Task Completed</li>
+        <li>Design Approved</li>
+        <li>Project Submitted</li>
+    </ul>
+
+    <h2>4. Horizontal List</h2>
+    <ul class="horizontal">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+
+    <h2>5. Card Style List</h2>
+    <ul class="card-list">
+        <li>Product 1 - High Quality Item</li>
+        <li>Product 2 - Best Seller</li>
+        <li>Product 3 - Limited Edition</li>
+    </ul>
+
+</body>
+</html>

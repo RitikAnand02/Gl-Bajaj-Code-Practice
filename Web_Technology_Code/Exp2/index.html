@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aligned Paragraphs with Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .content img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .content.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .content.reverse img {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .content.reverse img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Paragraphs Aligned with Images</h1>
+</header>
+
+<div class="container">
+
+    <div class="content">
+        <img src="./1.jpg" alt="Sample Image 1">
+        <p>
+            This is a properly aligned paragraph placed beside an image. 
+            The layout uses Flexbox to keep the content clean and structured. 
+            The text is justified for better readability and professional formatting.
+        </p>
+    </div>
+
+    <div class="content reverse">
+        <img src="./2.jpg" alt="Sample Image 2">
+        <p>
+            This section demonstrates alternating layout alignment. 
+            The image appears on the right while the paragraph stays aligned on the left. 
+            This creates visual variety and improves design balance.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Simple HTML Layout</p>
+</footer>
+
+</body>
+</html>

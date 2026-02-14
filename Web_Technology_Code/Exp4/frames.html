@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Images and Videos Using Frames</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        height: 90vh;
+      }
+
+      iframe {
+        width: 50%;
+        border: none;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Images and Videos Using Frames</h1>
+
+    <div class="container">
+      <!-- Image Frame -->
+      <iframe
+        srcdoc='<body style="text-align:center; font-family:Arial;"><h2>Image Section</h2><img src="./1.jpg" width="500"><br><br><img src="./2.jpg" width="500"></body>'
+      ></iframe>
+
+      <!-- Video Frame -->
+      <iframe
+        sandbox="allow-same-origin allow-scripts allow-popups allow-presentation"
+        srcdoc="&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;body{text-align:center;font-family:Arial;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h2&gt;Video Section&lt;/h2&gt;&lt;iframe width=&apos;560&apos; height=&apos;315&apos; src=&apos;https://www.youtube.com/embed/tcFtbPR4cSc&apos; title=&apos;YouTube video player&apos; frameborder=&apos;0&apos; allow=&apos;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&apos; allowfullscreen&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt;"
+      ></iframe>
+
+       <h2>PDF Section</h2>
+       <iframe src="./ST-1_Admit_Card.pdf" frameborder="10"></iframe>
+    </div>
+  </body>
+</html>
